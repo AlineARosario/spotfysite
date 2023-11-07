@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./caio.css"
+import "./caio.css"
 
 export function Footer (){
 
@@ -7,15 +7,13 @@ export function Footer (){
  
  <>
  <div className="conteudofooter">
-
-  <ul><li>
-    
    <p className="stylecompanhia">Companhia</p>
 
-   <span className="stylespan">Sobre</span>
-    <span className="stylespan">Trabalhos</span>
-    <span className="stylespan">Supporte</span>
-    </li></ul>
+   <div class="listafooter">
+  <li class="stylespan">Sobre</li>
+  <li class="stylespan">Trabalhos</li>
+  <li class="stylespan">Supporte</li>
+</div>
  </div>
 
 <div><hr className="linha"/></div>

@@ -1,8 +1,8 @@
-import React from "react"
-import { HiHome} from 'react-icons/Hi'
-import {BiSearch} from 'react-icons/Bi'
-import {BiLibrary} from 'react-icons/Bi'
-import {BiWorld} from 'react-icons/Bi'
+import React from "react";
+import { HiHome } from 'react-icons/hi';
+import { BiSearch } from 'react-icons/bi';
+import { BiLibrary } from 'react-icons/bi';
+import { BiWorld } from 'react-icons/bi';
 
 
 
@@ -21,7 +21,7 @@ export function Menu(){
                         ></path>
                     </svg>
                     </div>
-                    <ul>
+                    <ul  className="lista">
                         <li className="active"><HiHome/> Início </li>
                         <li><BiSearch/> Buscar </li>
                         <li><BiLibrary/> Sua Biblioteca </li>
@@ -33,7 +33,6 @@ export function Menu(){
                     </div>
                 </div>
             </div>
-        <div className="musicControls">music controls </div>
         </div>
     
     )

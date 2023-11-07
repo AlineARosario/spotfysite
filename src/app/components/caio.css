@@ -1,6 +1,5 @@
-
-
-  .container {
+/* Estilos para a barra de navegação */
+.container {
     display: flex;
     background-color: black;
     gap: 8px;
@@ -8,70 +7,54 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    flex-direction: end;
-
-
-}
-
-
-.seta {
+    flex-direction: row;
+  }
+  
+  .seta {
     padding: 20px;
     width: 30px;
     height: 30px;
-    background-image: url("");
+    background-image: url(""); /* Adicione sua URL de imagem aqui */
     background-size: contain;
-    /* Dimensiona a imagem para o tamanho da div */
     cursor: pointer;
-    /* Deixa a seta clicavel */
-
-
-}
-
-
-.btn {
+  }
+  
+  .btn {
     display: flex;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
-    padding: 8px 8px;
+    padding: 8px;
     text-align: center;
     font-weight: bold;
-    /* Negrito */
     outline: none;
-    font-style: none;
     border: none;
     text-decoration: none;
-    /* tira o italico */
-    font-size: 25px;
+  }
 
-
-
-
-}
-
-.btnlogin {
-
+  
+  .btnlogin {
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 18px;
-
-
-}
-
-.container_btn {
+  }
+  
+  .container_btn {
     display: flex;
-
     padding: 30px 20px;
     gap: 5px;
-
-
     font-family: Arial, Helvetica, sans-serif;
-
     font-style: none;
-
-
-}
-
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .container_btn :hover{
+    color: rgba(255, 255, 255, 0.82);
+   
+  }
+  
+  /* Estilos para o rodapé */
+  /* Estilos para o rodapé */
 .footer {
     display: flex;
     background-color: black;
@@ -79,65 +62,66 @@
     color: grey;
     padding: 20px;
     align-items: center;
-
-
-
-
-
-}
-
-.conteudofooter {
+  }
+  
+  .conteudofooter {
     display: flex;
     color: grey;
-    background-color: grey;
     background-color: black;
     align-items: center;
     width: 100%;
-
-
-
-}
-
-.stylecompanhia {
-    padding: 15px;
+  }
+  
+  .listafooter {
+    display: flex;
+  }
+  
+  .stylecompanhia {
     font-weight: bold;
     color: white;
     cursor: pointer;
-    /* Deixa a palavra clicavel */
-}
-
-.footerlista {
-
+    list-style-type: none;
+    padding-right: 14px;
+  }
+  
+  .footerlista {
     display: flex;
     align-items: center;
-
-}
-
-.stylespan {
-
-    display: block;
-    /* Faz com que os spans sejam exibidos em blocos */
+  }
+  
+  .stylespan {
+   
     margin-bottom: 10px;
     font-size: 16px;
     padding: 0.1px;
     cursor: pointer;
-    /* Deixa a palavra clicavel */
-
     width: 60%;
-
-}
-
-.linha {
+    padding-right: 14px;
+  }
+  
+  .linha {
     display: block;
     border-color: grey;
-    margin-block-start: 0px;
-    border: 0px;
-    border-block-start: 0px solid var(--decorative-subdued, grey);
+    margin-block-start: 0;
+    border: 0;
+    border-block-start: 0 solid var(--decorative-subdued, grey);
     margin-block-end: var(--spacer-1, 1px);
-    padding: 0px;
-
-
-
-
-
-}
+    padding: 0;
+  }
+  
+/* Consulta de mídia para telas menores */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .btn {
+      font-size: 20px;
+    }
+  
+    .btnlogin {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  }
