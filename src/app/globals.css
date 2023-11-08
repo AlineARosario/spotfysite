@@ -5,16 +5,37 @@
   list-style: none;
 }
 
-.container {
+.teste {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+}
+
+.box1 {}
+
+.box3 {
+  width: 30%;
+
+}
+
+.box2 {
+  display: flex;
   background-color: #111010;
   color: #fff;
-  padding: 20px;
 
+}
+
+.box4 {
+  display: flex;
 }
 
 .pai {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  align-content: space-between;
+
 
 
 }
@@ -22,8 +43,13 @@
 .header {
   font-size: 2vw;
   background-color: #111010;
-  color: #fff;
-  margin-bottom: 2%;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  /* Ajuste o padding conforme necessário */
+  margin: 0;
+  /* Remova as margens padrão do h2 */
 }
 
 /* Exemplo de media query para ajustar estilos em telas menores */
@@ -31,6 +57,7 @@
   .pai {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-content: space-between;
   }
 
   .header {
@@ -40,65 +67,86 @@
 
 }
 
- .App {
-  height: calc(100vh - 90px);
+/* Estilos gerais */
+.App {
+  height: calc(100vh);
   background: rgb(41, 39, 39);
 
 }
 
-
+/* Estilos da barra de navegação */
 .navBar {
   width: 220px;
-  height: calc(100% - 10px);
+  height: calc(100%);
   background: black;
-  padding: 10px 10px 0;
+  padding: 0.2rem;
   display: grid;
   flex-direction: column;
-  .logo {
-    padding: 1.5rem 1.5rem;
-    svg {
-      max-width: 130px;
-      p {
-        fill: white;
-      }
-    }
-  }
+
 }
-  
-.navBar ul{
+
+.navBar .logo {
+  padding: 0.2rem;
+}
+
+.navBar .logo svg {
+  max-width: 150px;
+}
+
+.navBar .logo svg p {
+  fill: white;
+}
+
+.navBar ul {
   margin: 0;
   padding: 0;
 }
+
 .cookies {
   font-size: 0.6rem;
   color: grey;
-  text-align: left;
+  text-align: center;
   margin-top: auto;
   padding: 1rem;
 }
 
-.cookies span{
- display: block;
-  
+.cookies span {
+  display: block;
 }
 
 .idioma {
-  font-size: 0.6rem;
+  font-size: 5rem;
   color: grey;
   text-align: center;
   margin-top: 1rem;
-  padding: 0.5rem 0.5rem;
-  border: 2px solid rgb(165, 161, 161) ;
+  padding: 0.5rem;
+  
   border-radius: 5px;
 }
 
-.idioma span {
-  display: block;
-
+.btnidioma {
+  display: flex;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  text-decoration: none;
+ 
+ 
 }
 
+/* Estilos para a lista */
+/* Estilos para os itens da lista */
+.lista :hover {
+  color: white;
+  background: grey;
+}
 
-li {
+.lista li {
   color: rgb(209, 195, 195);
   list-style-type: none;
   border-radius: 5px;
@@ -106,38 +154,21 @@ li {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  &.active {
-    background: grey;
+}
+
+
+
+@media (max-width: 768px) {
+  .navBar {
+    width: 100%;
+    height: auto;
   }
-  
-  &:hover {
-    color: white;
-        }
-}
-  
 
+  .outerWrap {
+    width: 100%;
+  }
 
-
-
-
-
-
-
- .outerWrap {
-  background: grey;
-  height: 100vh;
-  min-height: 100%;
-display: grid inline-block;
-}
-
-.musicControls {
-  background: grey;
-  text-align: center;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  z-index: 2;
-  position: relative;
+  .navBar .logo svg {
+    max-width: 100%;
+  }
 }

@@ -1,77 +1,63 @@
-
-
-  .container {
+/* Estilos para a barra de navegação */
+.container {
     display: flex;
     background-color: black;
-    gap: 8px;
-    height: 60px;
+    gap: 2px;
+    height: 56px;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    flex-direction: end;
-
-
+    flex-direction: row;
 }
-
 
 .seta {
     padding: 20px;
     width: 30px;
     height: 30px;
     background-image: url("");
+    /* Adicione sua URL de imagem aqui */
     background-size: contain;
-    /* Dimensiona a imagem para o tamanho da div */
     cursor: pointer;
-    /* Deixa a seta clicavel */
-
-
 }
-
 
 .btn {
     display: flex;
-    font-size: 30px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
-    padding: 8px 8px;
+    padding: 8px;
     text-align: center;
     font-weight: bold;
-    /* Negrito */
     outline: none;
-    font-style: none;
     border: none;
     text-decoration: none;
-    /* tira o italico */
-    font-size: 25px;
-
-
-
-
 }
 
-.btnlogin {
 
+.btnlogin {
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 18px;
-
-
+    font-size: 15px;
 }
 
 .container_btn {
     display: flex;
-
     padding: 30px 20px;
     gap: 5px;
-
-
     font-family: Arial, Helvetica, sans-serif;
-
     font-style: none;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
 
+.container_btn :hover {
+     transform: scale(1.1);
+        /* Aumenta a escala para 110% no hover */
 
 }
 
+/* Estilos para o rodapé */
+/* Estilos para o rodapé */
 .footer {
     display: flex;
     background-color: black;
@@ -79,65 +65,63 @@
     color: grey;
     padding: 20px;
     align-items: center;
-
-
-
-
-
 }
 
 .conteudofooter {
-    display: flex;
+display: flex;
     color: grey;
-    background-color: grey;
     background-color: black;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 30px;
+}
 
-
-
+.listafooter {
+    display: flex;
 }
 
 .stylecompanhia {
-    padding: 15px;
     font-weight: bold;
     color: white;
     cursor: pointer;
-    /* Deixa a palavra clicavel */
+    list-style-type: none;
+    padding-right: 14px;
 }
 
 .footerlista {
-
     display: flex;
     align-items: center;
-
 }
 
 .stylespan {
 
-    display: block;
-    /* Faz com que os spans sejam exibidos em blocos */
     margin-bottom: 10px;
     font-size: 16px;
     padding: 0.1px;
     cursor: pointer;
-    /* Deixa a palavra clicavel */
-
     width: 60%;
-
+    padding-right: 14px;
 }
 
-.linha {
-    display: block;
-    border-color: grey;
-    margin-block-start: 0px;
-    border: 0px;
-    border-block-start: 0px solid var(--decorative-subdued, grey);
-    margin-block-end: var(--spacer-1, 1px);
-    padding: 0px;
 
 
+/* Consulta de mídia para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
 
+    .btn {
+        font-size: 20px;
+    }
 
-
+    .btnlogin {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
 }

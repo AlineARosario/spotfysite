@@ -1,8 +1,8 @@
-import React from "react"
-import { HiHome} from 'react-icons/Hi'
-import {BiSearch} from 'react-icons/Bi'
-import {BiLibrary} from 'react-icons/Bi'
-import {BiWorld} from 'react-icons/Bi'
+import React from "react";
+import { HiHome } from 'react-icons/hi';
+import { BiSearch } from 'react-icons/bi';
+import { BiLibrary } from 'react-icons/bi';
+import { BiWorld } from 'react-icons/bi';
 
 
 
@@ -13,7 +13,7 @@ export function Menu(){
             <div className="App">
                 <div className="navBar">
                     <div className="logo"> 
-                        <svg role="img" viewBox="0 0 78 24" aria-label="Spotify" aria-hidden="false" height="24" data-encore-id="logoSpotify" class="Svg-sc-6c3c1v-0 dDJltW">
+                        <svg role="img" viewBox="0 0 78 24" aria-label="Spotify" aria-hidden="false" height="90" data-encore-id="logoSpotify" class="Svg-sc-6c3c1v-0 dDJltW">
                             <title>Spotify</title>
                             <path
                                 fill="white"
@@ -21,7 +21,7 @@ export function Menu(){
                         ></path>
                     </svg>
                     </div>
-                    <ul>
+                    <ul  className="lista">
                         <li className="active"><HiHome/> Início </li>
                         <li><BiSearch/> Buscar </li>
                         <li><BiLibrary/> Sua Biblioteca </li>
@@ -29,11 +29,10 @@ export function Menu(){
                     <div className="cookies">
                         <span>Cookies</span></div>
                     <div className="idioma">
-                        <span><BiWorld/> Português do Brasil </span>
+                        <span><button><BiWorld/> Português do Brasil </button></span>
                     </div>
                 </div>
             </div>
-        <div className="musicControls">music controls </div>
         </div>
     
     )

@@ -6,7 +6,7 @@
     padding: 5%;
     border: 1px transparent #333;
     margin: 5%;
-    /* Use uma margem relativa */
+    /*  uma margem relativa */
     transition: background-color 0.3s, box-shadow 0.3s;
     overflow: hidden;
     cursor: pointer;
@@ -58,14 +58,14 @@
 .musica {
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     font-size: 2vw;
-    /* Use uma unidade relativa para o tamanho da fonte */
+    /* uma unidade relativa para o tamanho da fonte */
     font-weight: 700;
     flex-direction: column;
 }
 
 .subtitulo {
     font-size: 1vw;
-    /* Use uma unidade relativa para o tamanho da fonte */
+    /*  uma unidade relativa para o tamanho da fonte */
     color: #dcd5d5;
 }
 

@@ -1,3 +1,4 @@
+
 import "./postagem.css";
 
 interface PostagemProps {
@@ -24,4 +25,3 @@ export function Postagem(props: PostagemProps) {
      </div>
   );
 }
-
