@@ -1,27 +1,27 @@
 .capa-album {
     position: relative;
-    border-radius: 5%;
-    /* unidade relativa para a borda arredondada */
+    border-radius: 5%; /* unidade relativa para a borda arredondada */
     background-color: #282828;
     padding: 5%;
     border: 1px transparent #333;
+<<<<<<< HEAD
     margin: 5%;
     /*  uma margem relativa */
+=======
+    margin: 5%; /* Use uma margem relativa */
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
     transition: background-color 0.3s, box-shadow 0.3s;
     overflow: hidden;
     cursor: pointer;
 }
-
 .play-button {
     font-size: 30px;
-    color: #1DB954;
-    /* Cor do verde do Spotify */
+    color: #1DB954; /* Cor do verde do Spotify */
     background: none;
     border: none;
     cursor: pointer;
-}
-
-.overlay {
+  }
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,21 +33,20 @@
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: opacity 0.3s;
-
-}
-
-
+    
+  }
+  
+  
 .capa-album:hover {
     background-color: #696767;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
-
+  
 }
-
 .capa-album:hover .overlay {
     opacity: 1;
-
-}
+    
+  }
 
 
 .postagem-footer {
@@ -56,16 +55,25 @@
 }
 
 .musica {
+<<<<<<< HEAD
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     font-size: 2vw;
     /* uma unidade relativa para o tamanho da fonte */
+=======
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+    font-size: 2vw; /* Use uma unidade relativa para o tamanho da fonte */
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
     font-weight: 700;
     flex-direction: column;
 }
 
 .subtitulo {
+<<<<<<< HEAD
     font-size: 1vw;
     /*  uma unidade relativa para o tamanho da fonte */
+=======
+    font-size: 1vw; /* Use uma unidade relativa para o tamanho da fonte */
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
     color: #dcd5d5;
 }
 
@@ -84,9 +92,7 @@
         padding: 2%;
     }
 
-    .musica,
-    .subtitulo {
-        font-size: 16px;
-        /* Voltando a um tamanho fixo para telas menores */
+    .musica, .subtitulo {
+        font-size: 16px; /* Voltando a um tamanho fixo para telas menores */
     }
 }

@@ -5,6 +5,7 @@
   list-style: none;
 }
 
+<<<<<<< HEAD
 .teste {
   display: flex;
   flex-direction: column;
@@ -24,7 +25,32 @@
   display: flex;
   background-color: #111010;
   color: #fff;
+=======
+.teste{
+display: flex;
+flex-direction: column;
+position: relative; 
+ 
+ 
+}
 
+.box1{
+  
+}
+.box3{
+width: 30%;
+
+}
+.box2{
+  display: flex;
+  background-color: #111010;
+  color: #fff;
+  
+}
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
+
+.box4{
+display: flex;
 }
 
 .box4 {
@@ -35,7 +61,11 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-content: space-between;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
 
 
 }
@@ -46,10 +76,15 @@
   position: relative;
   top: 0;
   left: 0;
+<<<<<<< HEAD
   padding: 10px;
   /* Ajuste o padding conforme necessário */
   margin: 0;
   /* Remova as margens padrão do h2 */
+=======
+  padding: 10px; /* Ajuste o padding conforme necessário */
+  margin: 0; /* Remova as margens padrão do h2 */
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
 }
 
 /* Exemplo de media query para ajustar estilos em telas menores */
@@ -70,8 +105,13 @@
 /* Estilos gerais */
 .App {
   height: calc(100vh);
+<<<<<<< HEAD
   background: rgb(41, 39, 39);
 
+=======
+  background: rgb(41, 39, 39); 
+  
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
 }
 
 /* Estilos da barra de navegação */
@@ -79,6 +119,7 @@
   width: 220px;
   height: calc(100%);
   background: black;
+<<<<<<< HEAD
   padding: 0.2rem;
   display: grid;
   flex-direction: column;
@@ -91,6 +132,20 @@
 
 .navBar .logo svg {
   max-width: 150px;
+=======
+  padding: 10px;
+  display: grid;
+  flex-direction: column;
+  
+}
+
+.navBar .logo {
+  padding: 1.5rem;
+}
+
+.navBar .logo svg {
+  max-width: 130px;
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
 }
 
 .navBar .logo svg p {
@@ -120,6 +175,7 @@
   text-align: center;
   margin-top: 1rem;
   padding: 0.5rem;
+<<<<<<< HEAD
   
   border-radius: 5px;
 }
@@ -137,15 +193,30 @@
   text-decoration: none;
  
  
+=======
+  border: 2px solid rgb(165, 161, 161);
+  border-radius: 5px;
+}
+
+.idioma span {
+  display: block;
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
 }
 
 /* Estilos para a lista */
 /* Estilos para os itens da lista */
+<<<<<<< HEAD
 .lista :hover {
   color: white;
   background: grey;
 }
 
+=======
+.lista :hover{
+  color: white;
+  background: grey;
+}
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
 .lista li {
   color: rgb(209, 195, 195);
   list-style-type: none;
@@ -155,6 +226,7 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+<<<<<<< HEAD
 
 
 
@@ -164,6 +236,25 @@
     height: auto;
   }
 
+=======
+
+/* Estilos para a estrutura geral da página */
+.outerWrap {
+  background: grey;
+  height: 100vh;
+  min-height: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 18.5%;
+}
+@media (max-width: 768px) {
+  .navBar {
+    width: 100%;
+    height: auto;
+  }
+
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
   .outerWrap {
     width: 100%;
   }

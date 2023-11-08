@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import { Menu } from './components/menu';
 import { Postagem } from "./components/postagem";
 import { Header } from "./components/header";
@@ -7,6 +8,17 @@ function App() {
     return (
       <div className="teste">
           <div className=" box1"><Header /></div>
+=======
+import { Menu } from './componetes/menu'
+import { Postagem } from "./componetes/postagem";
+import { Header } from "./componetes/header"
+import {Footer} from "./componetes/footer"
+function App() {
+    return (
+      <div className="teste">
+          <div className=" box1"><Header /></div> 
+           
+>>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
           <div className="box2">
           <div className="box3"><Menu/></div>
           <main className="pai">
