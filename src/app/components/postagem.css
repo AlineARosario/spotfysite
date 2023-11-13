@@ -4,12 +4,8 @@
     background-color: #282828;
     padding: 5%;
     border: 1px transparent #333;
-<<<<<<< HEAD
     margin: 5%;
     /*  uma margem relativa */
-=======
-    margin: 5%; /* Use uma margem relativa */
->>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
     transition: background-color 0.3s, box-shadow 0.3s;
     overflow: hidden;
     cursor: pointer;
@@ -55,25 +51,16 @@
 }
 
 .musica {
-<<<<<<< HEAD
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     font-size: 2vw;
     /* uma unidade relativa para o tamanho da fonte */
-=======
-    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
-    font-size: 2vw; /* Use uma unidade relativa para o tamanho da fonte */
->>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
     font-weight: 700;
     flex-direction: column;
 }
 
 .subtitulo {
-<<<<<<< HEAD
     font-size: 1vw;
     /*  uma unidade relativa para o tamanho da fonte */
-=======
-    font-size: 1vw; /* Use uma unidade relativa para o tamanho da fonte */
->>>>>>> ba04a3db5649411b7e5f4592ada91a4715fb08bf
     color: #dcd5d5;
 }
 
